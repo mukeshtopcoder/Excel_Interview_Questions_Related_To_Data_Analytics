@@ -51,9 +51,9 @@ times?
  
  
 <h4>1. What are the differences between Excel Tables vs Normal Ranges? Why use tables in analytics?</h4>  
-<b>Normal Range  =</b> Just a collection of cells.  
-<b>Excel Table  =</b> Structured dataset with special features.  
-  <b>Key Differences:</b>  
+<b>Normal Range  =</b> Just a collection of cells.  </br>
+<b>Excel Table  =</b> Structured dataset with special features.  </br>
+  <b>Key Differences:</b>  </br>
   <table> <tr>
 <th>Feature</th>  <th>Normal Range</th>  <th>Excel Table</th>  </tr>
 <tr><th>Formatting</th>  <td>Needs manual formatting</td>  <td>Automatically formatted (banded 
@@ -72,32 +72,43 @@ column</td></tr>
 used directly)</td></tr>
 </table>
 <h4>2. Why use Tables in Analytics?  </h4>
-• Dynamic nature : When new data comes in, all charts, pivot tables, and formulas 
-update automatically.  
-• Clean structured references : Easy to read and maintain formulas.  
-• Better data integrity : Prevents accidental formula breaks when rows are added.  
-• Useful for dashboards : Tables + slicers work seamlessly.  
- Example : If your data range is converted to a table named Sales, you can write:  
-=SUM(Sales[Amount])  
-instead of  
-=SUM(C2:C1000)  
+<ul>
+<li>Dynamic nature : When new data comes in, all charts, pivot tables, and formulas 
+update automatically.  </li>
+<li><b>Clean structured references : </b>Easy to read and maintain formulas.  </li>
+<li><b>Better data integrity : </b>Prevents accidental formula breaks when rows are added.  </li>
+<li><b>Useful for dashboards : </b>Tables + slicers work seamlessly.  </li>
+ </ul>
+<b>Example :</b> If your data range is converted to a table named Sales, you can write:  </br>
+=SUM(Sales[Amount])  </br>
+instead of  </br>
+=SUM(C2:C1000)  </br>
  
- How do you remove duplicates from a dataset?  
-  Methods:  
-1. Using Remove Duplicates Tool (Quickest)  
-o Select dataset → Go to Data → Remove Duplicates  
-o Choose columns to check for duplicates (e.g., Customer ID + Date).  
-o Click OK → Excel removes duplicate rows.  
-2. Using Advanced Filter  
-o Go to Data → Advanced  
-o Select “Unique records only” → Copy to another location.  
-3. Using Formulas (Flag Duplicates)  
-o =COUNTIF($A$2:A2,A2)>1  → Returns TRUE if the value already appeared.  
-o Use this to highlight or filter duplicate rows.  
-4. Using Conditional Formatting  
-
-o Home → Conditional Formatting → Highlight Duplicate Values  → visually spots 
-duplicates.  
+<h4>How do you remove duplicates from a dataset? </h4> 
+<b>Methods: </b> 
+<ol>
+<li>Using Remove Duplicates Tool (Quickest)  </li>
+  <ul>
+<li>Select dataset → Go to Data → Remove Duplicates  </li>
+<li>Choose columns to check for duplicates (e.g., Customer ID + Date).  </li>
+<li>Click OK → Excel removes duplicate rows.  </li>
+  </ul>
+<li>Using Advanced Filter  </li>
+<ul>
+<li>Go to Data → Advanced </li> 
+<li>Select “Unique records only” → Copy to another location.  </li>
+ </ul>
+<li>Using Formulas (Flag Duplicates)  </li>
+ <ul>
+<li>=COUNTIF($A$2:A2,A2)>1  → Returns TRUE if the value already appeared.  </li>
+<li>Use this to highlight or filter duplicate rows.  </li>
+  </ul>
+<li>Using Conditional Formatting  </li>
+<ul>
+<li><b>Home → Conditional Formatting → Highlight Duplicate Values  → visually spots 
+duplicates.</b>  </li>
+</ul>
+</ol>
  Best Practice in Analytics : Don’t delete duplicates blindly. First, check why duplicates exist  
 (could be data entry errors, or valid multiple records like repeat purchases).  
  
