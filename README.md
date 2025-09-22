@@ -1,27 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Excel Interview Questions — README</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.6; color:#111; padding:24px; background:#f8fafc; }
-    .container { max-width:1100px; margin:0 auto; background:#fff; padding:28px; border-radius:10px; box-shadow:0 6px 20px rgba(16,24,40,0.06); }
-    h1,h2,h3,h4 { color:#0b3b66; margin-top:18px; margin-bottom:12px; }
-    p { margin:8px 0; }
-    ul, ol { margin:8px 0 16px 24px; }
-    table { width:100%; border-collapse:collapse; margin:12px 0 18px; }
-    table th, table td { border:1px solid #e6eef6; padding:10px; text-align:left; vertical-align:top; background:#fff; }
-    table th { background:#f1f7fb; color:#0c3a5a; }
-    code, pre { background:#f3f6f9; padding:6px 8px; border-radius:6px; font-family:SFMono-Regular, Menlo, Monaco, "Courier New", monospace; font-size:0.95em; }
-    .note { background:#fff8db; padding:10px; border-left:4px solid #ffcf2f; border-radius:6px; margin:12px 0; }
-    .muted { color:#556677; font-size:0.95em; }
-    .two-col { display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
-    @media (max-width:720px){ .two-col { grid-template-columns: 1fr; } }
-  </style>
-</head>
-<body>
-  <div class="container">
+
     <h1>Excel Interview Questions</h1>
     <p class="muted">A comprehensive set of common Excel interview questions and model answers covering basic data handling, formulas, pivot tables, scenarios, and advanced topics.</p>
 
@@ -430,9 +407,4 @@ End Sub</code></pre>
     </ul>
     <p class="note"><strong>Key point:</strong> For analytics, combine Power Query + Power Pivot + PivotTables for best performance and scalability.</p>
 
-    <footer style="margin-top:24px; border-top:1px solid #eef6fb; padding-top:18px;">
-      <p class="muted">Converted and formatted for README / HTML presentation. Feel free to copy this HTML into your <code>README.md</code> renderer or web page.</p>
-    </footer>
-  </div>
-</body>
-</html>
+
