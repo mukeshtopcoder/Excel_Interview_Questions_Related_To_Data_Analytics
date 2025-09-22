@@ -56,18 +56,16 @@ Excel Table  = Structured dataset with special features.
   Key Differences:  
   <table> <tr>
 <th>Feature</th>  <th>Normal Range</th>  <th>Excel Table</th>  </tr>
-Formatting  Needs manual formatting  Automatically formatted (banded 
-rows, filter buttons)  
-Dynamic Range  Fixed — if new rows are added, 
-formulas/pivots won’t auto -update  Expands automatically when new 
-rows/columns are added  
-References  Uses cell references ( A2:C100) Uses structured references 
-(Sales[Amount] ) 
-Sorting/Filtering  Needs manual filter application  Built-in filter and sort buttons  
-
-Feature  Normal Range  Excel Table  
-Formulas  Must copy formulas down manually  Auto-fills formulas for the whole 
-column  
+<tr><th>Formatting</th>  <td>Needs manual formatting</td>  <td>Automatically formatted (banded 
+rows, filter buttons)</td></tr>  
+<tr><th>Dynamic Range</th>  <td>Fixed — if new rows are added, 
+formulas/pivots won’t auto -update</td>  <td>Expands automatically when new 
+rows/columns are added</td>  </tr>
+<tr><th>References</th>  <td>Uses cell references ( A2:C100)</td> <td>Uses structured references 
+(Sales[Amount] ) </td></tr>
+<tr><th>Sorting/Filtering</th>  <td>Needs manual filter application</td>  <td>Built-in filter and sort buttons</td>  </tr>
+<tr><th>Formulas</th>  <td>Must copy formulas down manually</td>  <td>Auto-fills formulas for the whole 
+column</td></tr>  
 Pivot Tables  Needs manual range selection  Auto-connects with table name 
 (e.g., Sales) 
 Readability  Hard to understand  Self-explanatory (column names 
