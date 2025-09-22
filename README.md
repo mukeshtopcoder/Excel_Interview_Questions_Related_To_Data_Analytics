@@ -73,7 +73,7 @@ used directly)</td></tr>
 </table>
 <h4>2. Why use Tables in Analytics?  </h4>
 <ul>
-<li>Dynamic nature : When new data comes in, all charts, pivot tables, and formulas 
+<li><b>Dynamic nature : </b>When new data comes in, all charts, pivot tables, and formulas 
 update automatically.  </li>
 <li><b>Clean structured references : </b>Easy to read and maintain formulas.  </li>
 <li><b>Better data integrity : </b>Prevents accidental formula breaks when rows are added.  </li>
@@ -109,32 +109,44 @@ instead of  </br>
 duplicates.</b>  </li>
 </ul>
 </ol>
- Best Practice in Analytics : Don’t delete duplicates blindly. First, check why duplicates exist  
-(could be data entry errors, or valid multiple records like repeat purchases).  
+<b>Best Practice in Analytics : </b>Don’t delete duplicates blindly. First, check <b>why duplicates exist </b> (could be data entry errors, or valid multiple records like repeat purchases).  
  
- How would you clean messy data (extra spaces, text to columns, inconsistent formats)?  
-Messy data cleaning = Data Preprocessing Step  
-  Common Techniques:  
-1. Remove Extra Spaces  
-o Use =TRIM(A2)  → removes unnecessary spaces (except single space between 
-words).  
-o Example: " Mukesh Bhai "  → "Mukesh Bhai" . 
-2. Standardize Case  
-o =PROPER(A2)  → Each Word Capitalized.  
-o =UPPER(A2)  → All Uppercase.  
-o =LOWER(A2)  → All Lowercase.  
-3. Split Data (Text to Columns)  
-o Go to Data → Text to Columns . 
-o Example: "Mukesh,Bhai,India"  → separated into 3 columns.  
-4. Fix Inconsistent Formats  
-o Dates: Use =TEXT(A2,"dd -mm-yyyy") to standardize.  
-o Numbers: Remove text formatting ( VALUE(A2) ). 
-5. Remove Non -printable Characters  
-o =CLEAN(A2)  → removes hidden characters like line breaks.  
-6. Combine Columns  
-o =CONCATENATE(A2," ",B2)  or =TEXTJOIN(" ",TRUE,A2:B2) . 
- Example:  
-Original: " 25/12/2025 "  → TRIM + TEXT → "25-12-2025"  
+<h4>4. How would you clean messy data (extra spaces, text to columns, inconsistent formats)?  </h4>
+<b>Messy data cleaning = Data Preprocessing Step</b>  <br>
+<h5>Common Techniques:</h5>  
+<ol>
+<li><b>Remove Extra Spaces</b></li>  
+ <ul>
+<li>Use =TRIM(A2)  → removes unnecessary spaces (except single space between words).  </li>
+<li>Example: " Mukesh Bhai "  → "Mukesh Bhai" . </li>
+  </ul>
+<li><b>Standardize Case</b></li>  
+ <ul>
+<li>=PROPER(A2)  → Each Word Capitalized.  </li>
+<li>=UPPER(A2)  → All Uppercase.  </li>
+<li>=LOWER(A2)  → All Lowercase.  </li>
+  </ul>
+<li><b>Split Data (Text to Columns)  </b></li>
+ <ul>
+<li>Go to Data → Text to Columns . </li>
+<li>Example: "Mukesh,Bhai,India"  → separated into 3 columns.  </li>
+  </ul>
+<li><b>Fix Inconsistent Formats  </b></li>
+ <ul>
+<li>Dates: Use =TEXT(A2,"dd -mm-yyyy") to standardize.  </li>
+<li>Numbers: Remove text formatting ( VALUE(A2) ). </li>
+  </ul>
+<li><b>Remove Non -printable Characters</b></li>  
+ <ul>
+<li>=CLEAN(A2)  → removes hidden characters like line breaks.  </li>
+  </ul>
+<li><b>Combine Columns</b></li>  
+ <ul>
+<li>=CONCATENATE(A2," ",B2)  or =TEXTJOIN(" ",TRUE,A2:B2) .</li>
+  </ul>
+ </ol>
+<b>Example:  </br>
+Original: " 25/12/2025 "  → TRIM + TEXT → "25-12-2025"  </b>
  
  How do you handle missing values in Excel data?  
 Missing values are common in real -world datasets.  
