@@ -50,7 +50,7 @@ times?
 30. How would you handle large datasets (1M+ rows)  in Excel?  
  
  
- What are the differences between Excel Tables vs Normal Ranges? Why use tables in 
+#### 1. What are the differences between Excel Tables vs Normal Ranges? Why use tables in 
 analytics?  
 Normal Range  = Just a collection of cells.  
 Excel Table  = Structured dataset with special features.  
