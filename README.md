@@ -148,37 +148,37 @@ duplicates.</b>  </li>
 <b>Example:  </br>
 Original: " 25/12/2025 "  → TRIM + TEXT → "25-12-2025"  </b>
  
-<h4>How do you handle missing values in Excel data?  </h4>
+<h4>4. How do you handle missing values in Excel data?  </h4>
 Missing values are common in real -world datasets.  
  <h5>Techniques:</h5>  
 <ol>
 <li><b>Identify Missing Values</b></li>  
-o Use =COUNTBLANK(A2:A100)  → Counts blanks.  
+o Use =COUNTBLANK(A2:A100)  → Counts blanks.  </br>
 o Use filters or conditional formatting (highlight blanks).  
 <li><b>Handle Missing Values </b></li> 
-o Delete Rows  (only if very few and non -critical).  
-o Replace with Zero  → =IF(A2="",0,A2)  
-o Replace with Average/Median  → 
-=IF(A2="",AVERAGE($A$2:$A$100),A2)  
-o Forward Fill/Backward Fill  → Copy last known value to missing cell.  
-o Use Interpolation  (if sequential data like time series).  
+o Delete Rows  (only if very few and non -critical).  </br>
+o Replace with Zero  → =IF(A2="",0,A2)  </br>
+o Replace with Average/Median  → </br>
+=IF(A2="",AVERAGE($A$2:$A$100),A2)  </br>
+o Forward Fill/Backward Fill  → Copy last known value to missing cell.  </br>
+o Use Interpolation  (if sequential data like time series).  </br>
 <li><b>Flag Missing Data for Review </b></li> 
 o Add a helper column → =IF(A2="","Missing","OK")  
  </ol>
-  Best Practice in Analytics:  
-• If it’s customer data  (like missing phone number), mark as “Unknown” instead of 
-deleting.  
-• If it’s numeric data  (like missing sales amount), fill with mean/median or leave blank 
-depending on analysis type.  
- Example:  
-Dataset with missing sales values:  
-Customer  Sales  
-A 200  
-B  
-C 400  
-→ Replace blank with average (300).  
-Q5. Explain the difference between VLOOKUP, HLOOKUP, XLOOKUP, and INDEX -MATCH. 
-Which one do you prefer and why?  
+  <b>Best Practice in Analytics: </b> 
+<b>• If it’s customer data  (like missing phone number), mark as “Unknown” instead of deleting.  </b></br>
+<b>• If it’s numeric data  (like missing sales amount), fill with mean/median or leave blank. depending on analysis type.</b> </br> 
+<b>Example:</b>  </br>
+<b>Dataset with missing sales values:</b></br>  
+<table>
+ <tr> <th>Customer</th>  <th>Sales</th>  </tr>
+<tr><th>A</th> <td>200</td></tr>  
+<tr><th>B</th> <td></td> </tr>
+<tr><th>C</th> <td>400</td> </tr>  
+ </table>
+<b>→ Replace blank with average (300). </b> 
+<h4>5. Explain the difference between VLOOKUP, HLOOKUP, XLOOKUP, and INDEX -MATCH. 
+Which one do you prefer and why?  </h4>
 VLOOKUP (Vertical Lookup):  
 • Searches for a value in the first column  of a table and returns a value from another 
 column in the same row.  
