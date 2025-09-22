@@ -66,10 +66,10 @@ rows/columns are added</td>  </tr>
 <tr><th>Sorting/Filtering</th>  <td>Needs manual filter application</td>  <td>Built-in filter and sort buttons</td>  </tr>
 <tr><th>Formulas</th>  <td>Must copy formulas down manually</td>  <td>Auto-fills formulas for the whole 
 column</td></tr>  
-Pivot Tables  Needs manual range selection  Auto-connects with table name 
-(e.g., Sales) 
-Readability  Hard to understand  Self-explanatory (column names 
-used directly)
+<tr><th>Pivot Tables</th>  <td>Needs manual range selection</td>  <td>Auto-connects with table name 
+(e.g., Sales) </td></tr>
+<tr><th>Readability</th>  <td>Hard to understand</td>  <td>Self-explanatory (column names 
+used directly)</td></tr>
 </table>
 #### 2. Why use Tables in Analytics?  
 • Dynamic nature : When new data comes in, all charts, pivot tables, and formulas 
