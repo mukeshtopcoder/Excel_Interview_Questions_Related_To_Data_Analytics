@@ -51,9 +51,9 @@ times?
  
  
 #### 1. What are the differences between Excel Tables vs Normal Ranges? Why use tables in analytics?  
-Normal Range  = Just a collection of cells.  
-Excel Table  = Structured dataset with special features.  
-  Key Differences:  
+<b>Normal Range  =</b> Just a collection of cells.  
+<b>Excel Table  =</b> Structured dataset with special features.  
+  <b>Key Differences:</b>  
   <table> <tr>
 <th>Feature</th>  <th>Normal Range</th>  <th>Excel Table</th>  </tr>
 <tr><th>Formatting</th>  <td>Needs manual formatting</td>  <td>Automatically formatted (banded 
