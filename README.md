@@ -71,7 +71,7 @@ column</td></tr>
 <tr><th>Readability</th>  <td>Hard to understand</td>  <td>Self-explanatory (column names 
 used directly)</td></tr>
 </table>
-#### 2. Why use Tables in Analytics?  
+<h3>2. Why use Tables in Analytics?  </h3>
 • Dynamic nature : When new data comes in, all charts, pivot tables, and formulas 
 update automatically.  
 • Clean structured references : Easy to read and maintain formulas.  
