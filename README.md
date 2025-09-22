@@ -1,19 +1,16 @@
 # Excel Interview Questions
 
 ### Basic & Data Handling 
-1. What are the differences between Excel Tables vs Normal Ranges ? Why use tables in 
-analytics?  
+1. What are the differences between Excel Tables vs Normal Ranges ? Why use tables in analytics?  
 2. How do you remove duplicates from a dataset?  
 3. How would you clean messy data (extra spaces, text to columns, inconsistent formats)?  
 4. How do you handle missing values in Excel data?  
  
 ### Formulas & Functions  
-5. Explain the difference between VLOOKUP, HLOOKUP, XLOOKUP, and INDEX -MATCH. 
-Which one do you prefer and why?  
+5. Explain the difference between VLOOKUP, HLOOKUP, XLOOKUP, and INDEX -MATCH. Which one do you prefer and why?  
 6. What is the difference between absolute, relative, and mixed cell referencing ? 
 7. How would you use IF, IFS, and nested IFs  to categorize data?  
-8. Can you explain the use of TEXT, LEFT, RIGHT, MID, FIND, LEN, TRIM, and 
-### CONCATENATE (or TEXTJOIN)  in data cleaning?  
+8. Can you explain the use of TEXT, LEFT, RIGHT, MID, FIND, LEN, TRIM, and CONCATENATE (or TEXTJOIN)  in data cleaning?  
 9. How does the MATCH function  work? Give an example with INDEX.  
 10. When would you use OFFSET and INDIRECT functions ? 
  
