@@ -50,7 +50,7 @@ times?
 30. How would you handle large datasets (1M+ rows)  in Excel?  
  
  
-#### 1. What are the differences between Excel Tables vs Normal Ranges? Why use tables in analytics?  
+<h4>1. What are the differences between Excel Tables vs Normal Ranges? Why use tables in analytics?</h4>  
 <b>Normal Range  =</b> Just a collection of cells.  
 <b>Excel Table  =</b> Structured dataset with special features.  
   <b>Key Differences:</b>  
@@ -71,7 +71,7 @@ column</td></tr>
 <tr><th>Readability</th>  <td>Hard to understand</td>  <td>Self-explanatory (column names 
 used directly)</td></tr>
 </table>
-<h3>2. Why use Tables in Analytics?  </h3>
+<h4>2. Why use Tables in Analytics?  </h4>
 • Dynamic nature : When new data comes in, all charts, pivot tables, and formulas 
 update automatically.  
 • Clean structured references : Easy to read and maintain formulas.  
