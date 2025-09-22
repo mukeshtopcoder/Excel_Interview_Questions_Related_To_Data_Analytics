@@ -71,7 +71,7 @@ column</td></tr>
 <tr><th>Readability</th>  <td>Hard to understand</td>  <td>Self-explanatory (column names 
 used directly)</td></tr>
 </table>
-<h4>2. Why use Tables in Analytics?  </h4>
+<h4>Why use Tables in Analytics?  </h4>
 <ul>
 <li><b>Dynamic nature : </b>When new data comes in, all charts, pivot tables, and formulas 
 update automatically.  </li>
@@ -84,7 +84,7 @@ update automatically.  </li>
 instead of  </br>
 =SUM(C2:C1000)  </br>
  
-<h4>How do you remove duplicates from a dataset? </h4> 
+<h4>2. How do you remove duplicates from a dataset? </h4> 
 <b>Methods: </b> 
 <ol>
 <li>Using Remove Duplicates Tool (Quickest)  </li>
@@ -111,7 +111,7 @@ duplicates.</b>  </li>
 </ol>
 <b>Best Practice in Analytics : </b>Don’t delete duplicates blindly. First, check <b>why duplicates exist </b> (could be data entry errors, or valid multiple records like repeat purchases).  
  
-<h4>4. How would you clean messy data (extra spaces, text to columns, inconsistent formats)?  </h4>
+<h4>3. How would you clean messy data (extra spaces, text to columns, inconsistent formats)?  </h4>
 <b>Messy data cleaning = Data Preprocessing Step</b>  <br>
 <h5>Common Techniques:</h5>  
 <ol>
@@ -148,22 +148,23 @@ duplicates.</b>  </li>
 <b>Example:  </br>
 Original: " 25/12/2025 "  → TRIM + TEXT → "25-12-2025"  </b>
  
- How do you handle missing values in Excel data?  
+<h4>How do you handle missing values in Excel data?  </h4>
 Missing values are common in real -world datasets.  
-  Techniques:  
-
-1. Identify Missing Values  
+ <h5>Techniques:</h5>  
+<ol>
+<li><b>Identify Missing Values</b></li>  
 o Use =COUNTBLANK(A2:A100)  → Counts blanks.  
 o Use filters or conditional formatting (highlight blanks).  
-2. Handle Missing Values  
+<li><b>Handle Missing Values </b></li> 
 o Delete Rows  (only if very few and non -critical).  
 o Replace with Zero  → =IF(A2="",0,A2)  
 o Replace with Average/Median  → 
 =IF(A2="",AVERAGE($A$2:$A$100),A2)  
 o Forward Fill/Backward Fill  → Copy last known value to missing cell.  
 o Use Interpolation  (if sequential data like time series).  
-3. Flag Missing Data for Review  
+<li><b>Flag Missing Data for Review </b></li> 
 o Add a helper column → =IF(A2="","Missing","OK")  
+ </ol>
   Best Practice in Analytics:  
 • If it’s customer data  (like missing phone number), mark as “Unknown” instead of 
 deleting.  
