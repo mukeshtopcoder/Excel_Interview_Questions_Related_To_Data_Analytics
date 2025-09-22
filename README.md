@@ -1,5 +1,4 @@
-
-    <h1>Excel Interview Questions</h1>
+<h1>Excel Interview Questions</h1>
     <p class="muted">A comprehensive set of common Excel interview questions and model answers covering basic data handling, formulas, pivot tables, scenarios, and advanced topics.</p>
 
     <h2>Basic &amp; Data Handling</h2>
@@ -180,18 +179,13 @@
     <p class="note"><strong>Best practice:</strong> For customer data mark as "<em>Unknown</em>" rather than deleting; for numeric data consider mean/median or leave blank depending on the analysis.</p>
 
     <h3 id="q5">5. VLOOKUP vs HLOOKUP vs XLOOKUP vs INDEX-MATCH</h3>
-    <div class="two-col">
-      <div>
         <h4>VLOOKUP</h4>
         <p>Searches for a value in the first column of a table and returns a value from a specified column in the same row.</p>
         <p><code>=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])</code></p>
         <p><strong>Limitations:</strong> cannot look left, needs sorted data for approximate matches, slower on large datasets.</p>
-      </div>
-      <div>
+
         <h4>HLOOKUP</h4>
         <p>Like VLOOKUP but searches in the first row and returns value from another row. Rarely used compared to VLOOKUP.</p>
-      </div>
-    </div>
 
     <h4>INDEX-MATCH</h4>
     <p><strong>MATCH</strong> finds the position of a value; <strong>INDEX</strong> returns the value at that position. Typical combination:</p>
