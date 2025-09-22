@@ -1,6 +1,6 @@
 # Excel Interview Questions
 
-Basic & Data Handling  
+<b>Basic & Data Handling  </b>
 1. What are the differences between Excel Tables vs Normal Ranges ? Why use tables in 
 analytics?  
 2. How do you remove duplicates from a dataset?  
