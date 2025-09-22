@@ -1,23 +1,23 @@
 # Excel Interview Questions
 
-<b>Basic & Data Handling  </b>
+### Basic & Data Handling 
 1. What are the differences between Excel Tables vs Normal Ranges ? Why use tables in 
 analytics?  
 2. How do you remove duplicates from a dataset?  
 3. How would you clean messy data (extra spaces, text to columns, inconsistent formats)?  
 4. How do you handle missing values in Excel data?  
  
-Formulas & Functions  
+### Formulas & Functions  
 5. Explain the difference between VLOOKUP, HLOOKUP, XLOOKUP, and INDEX -MATCH. 
 Which one do you prefer and why?  
 6. What is the difference between absolute, relative, and mixed cell referencing ? 
 7. How would you use IF, IFS, and nested IFs  to categorize data?  
 8. Can you explain the use of TEXT, LEFT, RIGHT, MID, FIND, LEN, TRIM, and 
-CONCATENATE (or TEXTJOIN)  in data cleaning?  
+### CONCATENATE (or TEXTJOIN)  in data cleaning?  
 9. How does the MATCH function  work? Give an example with INDEX.  
 10. When would you use OFFSET and INDIRECT functions ? 
  
-Analytical & Business Functions  
+### Analytical & Business Functions  
 11. How do you calculate percentages, growth rates, and CAGR  in Excel?  
 12. What is the difference between COUNT, COUNTA, COUNTBLANK, and 
 COUNTIF/COUNTIFS ? 
@@ -25,7 +25,7 @@ COUNTIF/COUNTIFS ?
 14. What is the use of RANK, RANK.EQ, RANK.AVG  in analytics?  
 15. How can you use SUMPRODUCT  for conditional calculations?  
  
-Pivot Tables & Reporting  
+### Pivot Tables & Reporting  
 16. Explain how Pivot Tables help in data analysis.  
 17. How do you create a Pivot Table that shows % contribution to total sales by region ? 
 18. What are calculated fields and calculated items  in Pivot Tables?  
@@ -33,7 +33,7 @@ Pivot Tables & Reporting
 20. How would you refresh Pivot Tables automatically when data updates?  
  
 
-Scenario -based Questions  
+### Scenario -based Questions  
 21. Suppose you have a dataset with Sales, Date, and Region . How would you find the top 
 5 performing regions ? 
 22. You have sales data for multiple years. How would you calculate Year-over-Year growth  
@@ -43,7 +43,7 @@ in Excel?
 25. A dataset has outliers (e.g., one order with extremely high sales). How would you detect 
 and handle it?  
  
-Advanced Excel (Optional, for Analyst Role)  
+### Advanced Excel (Optional, for Analyst Role)  
 26. What are array formulas and dynamic arrays ? (Examples: FILTER, SORT, UNIQUE, 
 SEQUENCE)  
 27. How do you use Power Query  for data cleaning and transformation?  
