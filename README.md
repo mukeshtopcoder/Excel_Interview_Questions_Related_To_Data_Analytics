@@ -1,5 +1,5 @@
 <h1>Excel Interview Questions</h1>
-    <p class="muted">A comprehensive set of common Excel interview questions and model answers covering basic data handling, formulas, pivot tables, scenarios, and advanced topics.</p>
+    <p class="muted">A comprehensive set of common Excel interview questions and model answers covering basic data handling, formulas, pivot tables, scenarios, and advanced topics.
 
     <h2>Basic &amp; Data Handling</h2>
     <ol>
@@ -58,8 +58,8 @@
     <hr/>
 
     <h3 id="q1">1. What are the differences between Excel Tables vs Normal Ranges? Why use tables in analytics?</h3>
-    <p><strong>Normal Range</strong> = just a collection of cells.<br/>
-       <strong>Excel Table</strong> = structured dataset with special features.</p>
+    <strong>Normal Range</strong> = just a collection of cells.<br/>
+       <strong>Excel Table</strong> = structured dataset with special features.
 
     <h4>Key Differences</h4>
     <table>
@@ -117,13 +117,13 @@
       <li><strong>Dashboards:</strong> Tables + slicers integrate seamlessly for interactive reports.</li>
     </ul>
 
-    <p><strong>Example:</strong> If your data range is converted to a table named <code>Sales</code>, you can write:</p>
+    <strong>Example:</strong> If your data range is converted to a table named <code>Sales</code>, you can write:
     <pre><code>=SUM(Sales[Amount])</code></pre>
-    <p>instead of</p>
+    instead of
     <pre><code>=SUM(C2:C1000)</code></pre>
 
     <h3 id="q2">2. How do you remove duplicates from a dataset?</h3>
-    <p><strong>Methods</strong></p>
+    <strong>Methods</strong>
     <ol>
       <li><strong>Remove Duplicates tool (quick):</strong>
         <ul>
@@ -147,10 +147,10 @@
         </ul>
       </li>
     </ol>
-    <p class="note"><strong>Best practice:</strong> Don't delete duplicates blindly — investigate why they exist (data entry error vs valid repeat records).</p>
+    <p class="note"><strong>Best practice:</strong> Don't delete duplicates blindly — investigate why they exist (data entry error vs valid repeat records).
 
     <h3 id="q3">3. How would you clean messy data?</h3>
-    <p><strong>Common techniques</strong></p>
+    <strong>Common techniques</strong>
     <ol>
       <li><strong>Remove extra spaces:</strong> <code>=TRIM(A2)</code></li>
       <li><strong>Standardize case:</strong> <code>=PROPER(A2)</code>, <code>=UPPER(A2)</code>, <code>=LOWER(A2)</code></li>
@@ -159,10 +159,10 @@
       <li><strong>Remove non-printable chars:</strong> <code>=CLEAN(A2)</code></li>
       <li><strong>Combine columns:</strong> <code>=CONCATENATE(A2," ",B2)</code> or <code>=TEXTJOIN(" ",TRUE,A2:B2)</code></li>
     </ol>
-    <p><strong>Example:</strong> Original " 25/12/2025 " → <code>TRIM</code> + <code>TEXT</code> → "25-12-2025".</p>
+    <strong>Example:</strong> Original " 25/12/2025 " → <code>TRIM</code> + <code>TEXT</code> → "25-12-2025".
 
     <h3 id="q4">4. How do you handle missing values in Excel data?</h3>
-    <p><strong>Techniques</strong></p>
+    <strong>Techniques</strong>
     <ol>
       <li><strong>Identify missing values:</strong> <code>=COUNTBLANK(A2:A100)</code>, filters, or conditional formatting.</li>
       <li><strong>Handle missing values:</strong>
@@ -176,28 +176,28 @@
       </li>
       <li><strong>Flag missing data:</strong> helper column <code>=IF(A2="","Missing","OK")</code></li>
     </ol>
-    <p class="note"><strong>Best practice:</strong> For customer data mark as "<em>Unknown</em>" rather than deleting; for numeric data consider mean/median or leave blank depending on the analysis.</p>
+    <p class="note"><strong>Best practice:</strong> For customer data mark as "<em>Unknown</em>" rather than deleting; for numeric data consider mean/median or leave blank depending on the analysis.
 
     <h3 id="q5">5. VLOOKUP vs HLOOKUP vs XLOOKUP vs INDEX-MATCH</h3>
         <h4>VLOOKUP</h4>
-        <p>Searches for a value in the first column of a table and returns a value from a specified column in the same row.</p>
-        <p><code>=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])</code></p>
-        <p><strong>Limitations:</strong> cannot look left, needs sorted data for approximate matches, slower on large datasets.</p>
+        Searches for a value in the first column of a table and returns a value from a specified column in the same row.
+        <code>=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])</code>
+        <strong>Limitations:</strong> cannot look left, needs sorted data for approximate matches, slower on large datasets.
 
         <h4>HLOOKUP</h4>
-        <p>Like VLOOKUP but searches in the first row and returns value from another row. Rarely used compared to VLOOKUP.</p>
+        Like VLOOKUP but searches in the first row and returns value from another row. Rarely used compared to VLOOKUP.
 
     <h4>INDEX-MATCH</h4>
-    <p><strong>MATCH</strong> finds the position of a value; <strong>INDEX</strong> returns the value at that position. Typical combination:</p>
+    <strong>MATCH</strong> finds the position of a value; <strong>INDEX</strong> returns the value at that position. Typical combination:
     <pre><code>=INDEX(return_range, MATCH(lookup_value, lookup_range, 0))</code></pre>
-    <p>More flexible — can look left, dynamic column selection, often faster on large datasets.</p>
+    More flexible — can look left, dynamic column selection, often faster on large datasets.
 
     <h4>XLOOKUP (modern Excel)</h4>
-    <p>Replaces VLOOKUP &amp; HLOOKUP. Syntax:</p>
+    Replaces VLOOKUP &amp; HLOOKUP. Syntax:
     <pre><code>=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode], [search_mode])</code></pre>
-    <p>Can look left &amp; right, handles errors, simpler to read.</p>
+    Can look left &amp; right, handles errors, simpler to read.
 
-    <p><strong>Preferred:</strong> Use <code>XLOOKUP</code> if available. For older Excel versions use <code>INDEX-MATCH</code>.</p>
+    <strong>Preferred:</strong> Use <code>XLOOKUP</code> if available. For older Excel versions use <code>INDEX-MATCH</code>.
 
     <h3 id="q6">6. Absolute, relative, and mixed cell referencing</h3>
     <ul>
@@ -207,11 +207,11 @@
     </ul>
 
     <h3 id="q7">7. Using IF, IFS, and nested IFs</h3>
-    <p>Examples:</p>
+    Examples:
     <pre><code>=IF(Sales>1000,"High","Low")</code></pre>
     <pre><code>=IF(Sales>1000,"High", IF(Sales>500,"Medium","Low"))</code></pre>
     <pre><code>=IFS(Sales>1000,"High", Sales>500,"Medium", Sales<=500,"Low")</code></pre>
-    <p><strong>Preferred:</strong> Use <code>IFS</code> if available (cleaner); otherwise nested <code>IF</code>.</p>
+    <strong>Preferred:</strong> Use <code>IFS</code> if available (cleaner); otherwise nested <code>IF</code>.
 
     <h3 id="q8">8. TEXT, LEFT, RIGHT, MID, FIND, LEN, TRIM, CONCATENATE/TEXTJOIN</h3>
     <ul>
@@ -224,18 +224,18 @@
     </ul>
 
     <h3 id="q9">9. MATCH + INDEX</h3>
-    <p>Example:</p>
+    Example:
     <pre><code>=MATCH("Mango", A2:A6, 0)  -> returns 3</code></pre>
     <pre><code>=INDEX(A2:A6, MATCH("Mango", A2:A6, 0)) -> "Mango"</code></pre>
 
     <h3 id="q10">10. OFFSET and INDIRECT</h3>
-    <p><strong>OFFSET(reference, rows, cols, [height], [width])</strong> returns a reference offset from a starting point. E.g. <code>=SUM(OFFSET(A1,0,0,5,1))</code> sums A1:A5. Useful for dynamic ranges but volatile (can slow workbooks).</p>
-    <p><strong>INDIRECT(ref_text)</strong> returns a reference from text, e.g. <code>=INDIRECT("Sheet2!B2")</code>. Useful for switching ranges by sheet name, also volatile.</p>
+    <strong>OFFSET(reference, rows, cols, [height], [width])</strong> returns a reference offset from a starting point. E.g. <code>=SUM(OFFSET(A1,0,0,5,1))</code> sums A1:A5. Useful for dynamic ranges but volatile (can slow workbooks).
+    <strong>INDIRECT(ref_text)</strong> returns a reference from text, e.g. <code>=INDIRECT("Sheet2!B2")</code>. Useful for switching ranges by sheet name, also volatile.
 
     <h3 id="q11">11. Percentages, growth rates, and CAGR</h3>
-    <p><strong>Percentage:</strong> <code>=Part/Total</code> (format as %).<br/>
+    <strong>Percentage:</strong> <code>=Part/Total</code> (format as %).<br/>
        <strong>Growth %:</strong> <code>=(New-Old)/Old</code>.<br/>
-       <strong>CAGR:</strong> <code>=(Ending/Beginning)^(1/years)-1</code>.</p>
+       <strong>CAGR:</strong> <code>=(Ending/Beginning)^(1/years)-1</code>.
 
     <h3 id="q12">12. COUNT, COUNTA, COUNTBLANK, COUNTIF/COUNTIFS</h3>
     <table>
@@ -251,20 +251,20 @@
     </table>
 
     <h3 id="q13">13. Running totals / cumulative sums</h3>
-    <p><strong>Method 1 (simple):</strong></p>
+    <strong>Method 1 (simple):</strong>
     <pre><code>=SUM($B$2:B2)  -- put in C2 and drag down</code></pre>
-    <p><strong>Method 2 (table):</strong> <code>=SUM(SalesData[Sales]:[@Sales])</code></p>
-    <p><strong>Method 3 (pivot):</strong> Right-click value → Show Values As → Running Total In → choose Date.</p>
+    <strong>Method 2 (table):</strong> <code>=SUM(SalesData[Sales]:[@Sales])</code>
+    <strong>Method 3 (pivot):</strong> Right-click value → Show Values As → Running Total In → choose Date.
 
     <h3 id="q14">14. RANK, RANK.EQ, RANK.AVG</h3>
-    <p>Use to rank values. <code>RANK.EQ</code> gives same rank to ties; <code>RANK.AVG</code> gives average ranks when ties exist.</p>
+    Use to rank values. <code>RANK.EQ</code> gives same rank to ties; <code>RANK.AVG</code> gives average ranks when ties exist.
     <pre><code>Example data: 500, 600, 600, 700
 700 -> rank 1
 600 -> rank 2 (or 2.5 for RANK.AVG)
 500 -> rank 4</code></pre>
 
     <h3 id="q15">15. SUMPRODUCT for conditional calculations</h3>
-    <p>SUMPRODUCT multiplies arrays and sums results — can replace some SUMIFS/COUNTIFS and array formulas.</p>
+    SUMPRODUCT multiplies arrays and sums results — can replace some SUMIFS/COUNTIFS and array formulas.
     <pre><code>=SUMPRODUCT((C2:C10="East")*(B2:B10))          -- sum sales for East
 =SUMPRODUCT((C2:C10="East")*(D2:D10="Product A")*(B2:B10))  -- multiple conditions
 =SUMPRODUCT((C2:C10="East")*(B2:B10>100))          -- conditional count</code></pre>
@@ -286,8 +286,8 @@
     </ol>
 
     <h3 id="q18">18. Calculated fields vs calculated items (Pivot Tables)</h3>
-    <p><strong>Calculated Field:</strong> new field computed from existing fields (e.g., <code>Profit = Sales - Cost</code>). Works across fields / columns.</p>
-    <p><strong>Calculated Item:</strong> new item within a field (e.g., <em>North + East</em>). Works on row/column items inside the pivot.</p>
+    <strong>Calculated Field:</strong> new field computed from existing fields (e.g., <code>Profit = Sales - Cost</code>). Works across fields / columns.
+    <strong>Calculated Item:</strong> new item within a field (e.g., <em>North + East</em>). Works on row/column items inside the pivot.
 
     <h3 id="q19">19. Create a dynamic dashboard with slicers &amp; pivot charts</h3>
     <ol>
@@ -317,19 +317,19 @@ End Sub</code></pre>
       <li>Sort Row Labels → Largest to Smallest by Sum of Sales.</li>
       <li>In Row Labels → Value Filters → Top 10 → change to Top 5 by Sum of Sales.</li>
     </ol>
-    <p><strong>Alternative (formula):</strong> use <code>SUMIF</code> to get totals per region and <code>LARGE</code> to pick top values.</p>
+    <strong>Alternative (formula):</strong> use <code>SUMIF</code> to get totals per region and <code>LARGE</code> to pick top values.
 
     <h3 id="q22">22. Year-over-Year (YoY) growth</h3>
-    <p>Organize Year and Sales. Formula:</p>
+    Organize Year and Sales. Formula:
     <pre><code>= (CurrentYearSales - PreviousYearSales) / PreviousYearSales</code></pre>
-    <p>Format as percentage or use PivotTable → Show Values As → % Difference From → Previous Year.</p>
+    Format as percentage or use PivotTable → Show Values As → % Difference From → Previous Year.
 
     <h3 id="q23">23. Highlight top 10% using conditional formatting</h3>
     <ol>
       <li>Select sales range (e.g., C2:C100)</li>
       <li>Home → Conditional Formatting → Top/Bottom Rules → Top 10%</li>
     </ol>
-    <p><strong>Alternative formula:</strong></p>
+    <strong>Alternative formula:</strong>
     <pre><code>=C2 >= PERCENTILE($C$2:$C$100, 0.9)</code></pre>
 
     <h3 id="q24">24. Merge Orders &amp; Customers</h3>
@@ -355,8 +355,8 @@ End Sub</code></pre>
     </ul>
 
     <h3 id="q26">26. Array formulas and dynamic arrays</h3>
-    <p><strong>Array formulas</strong> perform calculations on arrays and may return single or multiple results (older Excel used Ctrl+Shift+Enter).</p>
-    <p><strong>Dynamic arrays</strong> (Excel 365 / 2021+) automatically spill results across cells.</p>
+    <strong>Array formulas</strong> perform calculations on arrays and may return single or multiple results (older Excel used Ctrl+Shift+Enter).
+    <strong>Dynamic arrays</strong> (Excel 365 / 2021+) automatically spill results across cells.
     <ul>
       <li><code>=UNIQUE(A2:A10)</code> — unique values</li>
       <li><code>=FILTER(A2:B20, B2:B20>100)</code> — filtered rows</li>
@@ -371,7 +371,7 @@ End Sub</code></pre>
       <li>Add calculations: custom columns using M, group/aggregate</li>
       <li>Close &amp; Load back to table or Data Model</li>
     </ol>
-    <p><strong>Key point:</strong> Power Query automates repetitive cleaning tasks and makes workflows repeatable.</p>
+    <strong>Key point:</strong> Power Query automates repetitive cleaning tasks and makes workflows repeatable.
 
     <h3 id="q28">28. Excel vs Power Pivot / Data Model</h3>
     <table>
@@ -387,9 +387,9 @@ End Sub</code></pre>
     </table>
 
     <h3 id="q29">29. Extract unique customers who purchased &gt; 3 times</h3>
-    <p>Assume customer names in <code>A2:A100</code> and purchase count in <code>B2:B100</code>:</p>
+    Assume customer names in <code>A2:A100</code> and purchase count in <code>B2:B100</code>:
     <pre><code>=FILTER(UNIQUE(A2:A100), B2:B100>3)</code></pre>
-    <p>Alternative: PivotTable with customer in Rows and count of purchases in Values, then filter &gt; 3.</p>
+    Alternative: PivotTable with customer in Rows and count of purchases in Values, then filter &gt; 3.
 
     <h3 id="q30">30. Handling large datasets (1M+ rows)</h3>
     <ul>
@@ -399,6 +399,6 @@ End Sub</code></pre>
       <li>Use tables + PivotTables for aggregation</li>
       <li>Consider storing raw data in an external database (SQL Server, Access, CSV) and connect via Power Query</li>
     </ul>
-    <p class="note"><strong>Key point:</strong> For analytics, combine Power Query + Power Pivot + PivotTables for best performance and scalability.</p>
+    <p class="note"><strong>Key point:</strong> For analytics, combine Power Query + Power Pivot + PivotTables for best performance and scalability.
 
 
